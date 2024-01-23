@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Voici mon PortFolio, je m'appel Jimmy TOUTAIN et je suis en BTS SIO. Ce PortFolio codé de ma main vous aidera a mieux connaitre ma personne et mon bts" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Toutain Jimmy - PortFolio</title>
+</head>
+<body>
+    <header>
+        <div class="NavButton" onclick="Nav_Active();"></div>
+        <nav class="Nav-Barre">
+            <a href="#" class="tittle">Dév. <span>Application</span></a>
+            <ul>
+                <li><a href="index.html#Accueil_Section" class="Accueil">Accueil</a></li>
+                <li><a href="index.html#Propos_Section" class="Propos">A Propos de Moi</a></li>
+                <li><a href="Projets.html" class="Projets">Projets</a></li>
+                <li><a href="BTS.html" class="BTS">BTS SIO</a></li>
+                <li><a href="Contact.html" class="Contact">Me Contacter</a></li>
+            </ul>
+            <div class="link">
+                <a href="#"><img class="twitter" src="Images/icon_twitter.png"></a>
+                <a href="#"><img src="Images/icon_instagram.png"></a>
+                <a href="#"></a>
+            </div>
+        </nav>
+    </header>
+    <section class="Contact_Section" id="Contact_Section">
+        <div class="title_section"><a href="#Contact_Section" class="stitle">Me Contacter</a></div>
+        <div class="back_content">
+                <div class="title_contact">Envoyer un message</div>
+                <form action="Contact.php" method="POST">
+                    <div class="content">
+                        <div class="input_message w50">
+                            <input name="prenom" type="text" required>
+                            <span>Prénom</span>
+                        </div>
+                        <div class="input_message w50">
+                            <input name="nom" type="text" required>
+                            <span>Nom</span>
+                        </div>
+                        <div class="input_message w50">
+                            <input name="mail" type="email" required>
+                            <span>E-Mail</span>
+                        </div>
+                        <div class="input_message w50">
+                            <input name="tel" type="text" required>
+                            <span>N°Téléphone</span>
+                        </div>
+                        <div class="input_message w100">
+                            <textarea name="message" required></textarea>
+                            <span>Ecrire le message ici ....</span>
+                        </div>
+                        <div class="input_button">
+                            <input type="submit" value="Envoyer">
+                        </div>
+                    </div>
+                </form>       
+        </div>
+        <div class="content_info">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                <p>23 Rue de l'Oudan <br> 42300 Roanne</p>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+                <p>06.51.68.59.03</p>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                  </svg>
+                  <p>Jimmy.toutain42@gmail.com</p>
+            </div>
+        </div>
+    </section>
+    <div class="Modals">
+        <!-----------------------------------------1er Année-------------------------------------------------------->
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal_Projet_Presentation" tabindex="-1" aria-labelledby="exampleM" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleM">Details Présentation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-custom">
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Presentation').modal('hide')" href="File/CV.pdf" target="_blank">Curriculum Vitae</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal_Projet_Cablage" tabindex="-1" aria-labelledby="exampleM" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleM">Details Câblage</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-custom">
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Cablage').modal('hide')" href="File/Projets/Câblage/AP1 devis cablage salle AL.pdf" target="_blank">Details des consignes</a>
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Cablage').modal('hide')" href="File/Projets/Câblage/DEVIS It PARTNER.xlsx - Configuration 1 .pdf" target="_blank">Devis Rendu</a>
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Cablage').modal('hide')" href="File/Projets/Câblage/Lettre d'accompagnement.pdf" target="_blank">Lettre d'accompagnement</a>
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Cablage').modal('hide')" href="File/Projets/Câblage/Lettre explicative câbles.pdf" target="_blank">Documentation</a>
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Cablage').modal('hide')" href="File/Projets/Câblage/Tableau.pdf" target="_blank">Tableau Explicatif</a>
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Cablage').modal('hide')" href="File/Projets/Câblage/mail.pdf" target="_blank">Mail Envoyé</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal_Projet_SiteWeb" tabindex="-1" aria-labelledby="exampleM" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleM">Details Site Web</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-custom">
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_SiteWeb').modal('hide')" href="File/Projets/Site Web/AP-Presentation.pdf" target="_blank">Details des consignes</a>
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_SiteWeb').modal('hide')" href="File/Projets/Site Web/Documentation.pdf" target="_blank">Documentation Site Web</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal_Projet_Poker" tabindex="-1" aria-labelledby="exampleM" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleM">Details Poker</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-custom">
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Poker').modal('hide')" href="File/Projets/Poker/AP POKER.pdf" target="_blank">Details des consignes - Console</a>
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Poker').modal('hide')" href="File/Projets/Poker/AP Poker POO - Windows Forms.pdf" target="_blank">Details des consignes - Graphique</a>
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Poker').modal('hide')" href="File/Projets/Poker/Poker_Documentation.pdf" target="_blank">Documentation - Console</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal_Projet_Cryptage" tabindex="-1" aria-labelledby="exampleM" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleM">Details Cryptage</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-custom">
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Cryptage').modal('hide')" href="File/Projets/Chiffrage/AP Logiciel de chiffrement.pdf" target="_blank">Details des consignes</a>
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Cryptage').modal('hide')" href="File/Projets/Chiffrage/DOCUMENTATION Cryptage.pdf" target="_blank">Documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal_Projet_SQL" tabindex="-1" aria-labelledby="exampleM" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleM">Details SQL - PHP</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-custom">
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_SQL').modal('hide')" href="File/Projets/SQL/PPE 02 - PHP & MySQL - Agence HsH.pdf" target="_blank">Details des consignes</a>
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_SQL').modal('hide')" href="File/Projets/SQL/Documentation.pdf" target="_blank">Documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------------------2eme Années------------------------------------------------------->
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal_Projet_Musee" tabindex="-1" aria-labelledby="exampleM" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleM">Details Musée</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-custom">
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Musee').modal('hide')" href="File/Projets/Musee/Consignes_Musee.pdf" target="_blank">Details des consignes</a>
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Musee').modal('hide')" href="File/Projets/Musee/Documentation_Musee.pdf" target="_blank">Documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal_Projet_Formulaire" tabindex="-1" aria-labelledby="exampleM" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleM">Details Allier Test</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-custom">
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Formulaire').modal('hide')" href="File/Projets/Formulaire/Consignes_Formulaire.pdf" target="_blank">Details des consignes</a>
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Formulaire').modal('hide')" href="File/Projets/Formulaire/Documention_Formulaire.pdf" target="_blank">Documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal_Projet_AppMusee" tabindex="-1" aria-labelledby="exampleM" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleM">Details Application Mobile Musée</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-custom">
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_AppMusee').modal('hide')" href="File/Projets/AppMusee/AppMusee_Consigne.pdf" target="_blank">Details des consignes</a>
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_AppMusee').modal('hide')" href="File/Projets/AppMusee/AppMusee_Documentation.pdf" target="_blank">Documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal_Projet_AppMovies" tabindex="-1" aria-labelledby="exampleM" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleM">Details Application Mobile Movies</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-custom">
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_AppMovies').modal('hide')" href="File/Projets/AppMovies/AppMovies_Consignes.pdf" target="_blank">Details des consignes</a>
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_AppMovies').modal('hide')" href="File/Projets/AppMovies/AppMovies_Documentation.pdf" target="_blank">Documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal_Projet_VichyPapeterie" tabindex="-1" aria-labelledby="exampleM" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleM">Details Vichy Papeterie</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-custom">
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_VichyPapeterie').modal('hide')" href="File/Projets/VichyPapeterie/VichyPapeterie_Consignes.pdf" target="_blank">Details des consignes</a>
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_VichyPapeterie').modal('hide')" href="File/Projets/VichyPapeterie/VichyPapeterie_Documentation.pdf" target="_blank">Documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!----------------------------------------------Perso------------------------------------------------------->
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal_Projet_Portfolio" tabindex="-1" aria-labelledby="exampleM" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleM">Details Protfolio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-custom">
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Portfolio').modal('hide')" href="File/Projets/PortFolio/Remarques_portfolio.pdf" target="_blank">Details des consignes</a>
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Portfolio').modal('hide')" href="File/Projets/PortFolio/Document sans titre (2).pdf" target="_blank">Documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal_Projet_Etiquette" tabindex="-1" aria-labelledby="exampleM" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleM">Details Etiquette</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-custom">
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Etiquette').modal('hide')" href="File/Projets/Etiquette/Documentation.pdf" target="_blank">Documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal_Projet_WinDev" tabindex="-1" aria-labelledby="exampleM" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleM">Details WinDev</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-custom">
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_WinDev').modal('hide')" href="File/Projets/WinDev/Docuementation.pdf" target="_blank">Documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal_Projet_HFSQL" tabindex="-1" aria-labelledby="exampleM" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleM">Details HFSQL</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-custom">
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_HFSQL').modal('hide')" href="File/Projets/HFSQL/Documentation.pdf" target="_blank">Documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal_Projet_Etat" tabindex="-1" aria-labelledby="exampleM" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleM">Details Etat</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-custom">
+                            <a class="bouton-modal alink" onclick="$('#Modal_Projet_Etat').modal('hide')" href="File/Projets/Etat/Documentation.pdf" target="_blank">Documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal_BTS_Explication" tabindex="-1" aria-labelledby="exampleM" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleM">Explication</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-custom" style="text-align: center;font-size: 1.2em;">
+                           <p>Pour l'explication, un SISR échangera ces heures de Développement avec des heures de Réseaux <br>
+                                Et inversement pour un SLAM.
+                           </p>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Compris</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!----------------------------------------------TabCompé------------------------------------------------------->
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal_TabCompetence" tabindex="-1" aria-labelledby="exampleM" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleM">Tableau de compétences</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-content-custom">
+                            <a class="bouton-modal alink" onclick="$('#Modal_TabCompetence').modal('hide')" href="File/Epreuves/E4 - Tableau de synthèse - SLAM.xlsx - Tableau de synthèse Épreuve E4.pdf" target="_blank">PDF</a>
+                            <a class="bouton-modal alink" onclick="$('#Modal_TabCompetence').modal('hide')" href="File/Epreuves/E4 - Tableau de synthèse - SLAM.xlsx" target="_blank">XLSX</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
