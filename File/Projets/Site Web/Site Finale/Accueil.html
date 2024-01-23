@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<!-- Code HTML -->
+<html>
+
+    <!-- Début du HEAD -->
+    <head>
+
+        <!-- Ajout de la largeur Maximum du site -->
+        <meta name="viewport" content="width=100%, initial-scale=1.0"> 
+
+        <!-- Titre de la page -->
+        <title class="titre">Accueil</title>  
+
+        <!-- Lien vers le fichier CSS -->
+        <link rel="stylesheet" href="style.css">  
+
+        <!-- Lien pour la police d'écriture -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">  
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">  
+
+        <!-- Lien pour l'icone de la page -->
+        <link rel="shortcut icon" type="image/png" href="Ratz_Logo.png" />
+
+        <!-- Format d'écriture complet -->
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        
+    </head>
+    
+    <!-- Début du BODY -->
+    <body class="N_scroll">  <!-- N_scroll = Ne pas avoir accés à la barre de scroll ( lier dans le CSS )-->
+        
+        <!-- Balise NAV pour les liens vers d'autres pages -->
+        <nav class="navigation_2"> <!-- navigation_2 est une class dériver de la class navigation, elle rajoute juste le texte-align: center-->
+
+            <!-- Logo à gauche du site lien vers l'accueil -->
+            <a href="index.html" class="logo-lien">
+             <img src="Ratz_Logo.png" type="image/png" class="logo-image">
+            </a> 
+
+            <!-- Titre de l'accueil -->
+            <p class="titre">
+                Les Ratz De France
+            </p>
+
+            <!-- Nom des créateurs -->
+            <div class="createur_nom_2">
+                <p>Jimmy Toutain & Alexis Escobar</p>
+                <p>Lycée Albert Londres</p>
+            </div>
+
+         </nav>
+
+        <!-- Onglets dans l'accueil -->
+         <div class="content_accueil">
+             
+            <!-- Première ligne d'onglet -->
+            <div class="accueil_content_1">
+                <a href="Accueil.html" class="nav_accueil">
+                    Mais tu es déja dans l'Accueil !!!!
+                </a>
+            </div>
+            <!-- Fin de la première ligne -->
+            
+            <!-- Seconde ligne d'onglet -->
+             <div class="accueil_content_1">
+                <a href="Génériques.html" class="nav_accueil">
+                    Générique
+                </a>
+                <a href="Épisodes.html" class="nav_accueil">
+                   Épisodes
+                </a>
+             </div>
+             <!-- Fin de la seconde ligne -->
+
+             <!-- Troisième ligne d'onglet -->
+            <div class="accueil_content_1">
+                <a href="Doublages.html" class="nav_accueil">
+                    Doublages
+                </a>
+                <a href="Créateurs.html" class="nav_accueil">
+                    Créateurs
+                </a>
+            </div>
+            <!-- Fin de la troisième ligne -->
+            
+         </div>
+
+         <!-- Vidéo en backgroung -->
+         <div class="video_back_3">
+            <video 
+                autoplay
+                loop=1
+                muted
+                class="video_3"
+                oncontextmenu="return false;">
+                <source src="Ratz_Generique.mp4">
+            </video>
+        </div>
+
+    </body>
+    <!-- Fin du BODY -->
+
+</html>
+<!-- Fin du code HTML -->

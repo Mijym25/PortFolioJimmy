@@ -1,0 +1,988 @@
+/* Début du code CSS */
+
+/* Importation de la police d'écriture */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');  
+
+/*Format de l'écritue complet */
+@charset "UTF-8";
+
+
+/* Avoir une marge de 0 en permanence */
+*,
+*::before,
+*::after 
+{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+/* Attribuer le type et la taille de la police a tout le code html */
+html 
+{
+    font-size: 1.4vw;                    /* vw = view witdh = par rapport à la largeur total */
+    font-family: 'Nunito', sans serif;
+}
+
+/* --------------------------------Les BODY------------------------------------ */
+
+/* Le body avec la class scroll */
+body.scroll
+{
+    background-color: #222222;
+    color: white;
+    height: 100%;  
+    width: 100%;   
+    position: absolute;  /* absolute = par rapport au bord de l'ecran */
+    overflow-x: hidden;  /* La barre de scroll vertical sera cacher */
+}
+
+/* Le body avec la class N_scroll */
+body.N_scroll
+{
+    background-color: #222222;
+    color: white;
+    height: 100%;  
+    width: 100%;   
+    position: absolute;
+    overflow: hidden;   /* Aucune barre de scrool ne sera affiché */
+}
+
+
+
+/* ---------------------------------Barre de navigation------------------------------------- */
+.navigation
+{
+    padding: 0.7% 4%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0.3vw 1.5vw rgba(0,0,0,.3);
+    opacity: 2;
+    background-color: #222222;
+    z-index: 50;
+    position: fixed;
+    top: 0%;
+    height: 6vw;
+    width: 100vw;    
+}
+
+/* Barre de navigation modifié */
+.navigation_2
+{
+    padding: 0.7% 4%;
+    display: flex;
+    align-items: center;
+    text-align: center;                            /* La modification */
+    box-shadow: 0 0.3vw 1.5vw rgba(0,0,0,.3);
+    opacity: 2;
+    background-color: #222222;
+    z-index: 50;
+    position: fixed;
+    top: 0%;
+    height: 6vw;
+    width: 100vw;    
+}
+
+/* L'onglet sélectionner */
+#select
+{
+    background-color: white;
+    color : #222222;
+    opacity: 0.8;
+    border-radius: 0.8vw;
+}
+
+/* Quand la souris passe sur l'onglet sélectionner */
+#select:hover
+{
+    opacity: 1;
+}
+
+
+/* Boutton sélectionner */
+#button_select
+{
+    background-color: white;
+    color : #222222;
+    opacity: 0.8;
+    border-radius: 0.8vw;
+}
+
+/* Quand la souris passe sur le boutton sélectionner */
+#button_select:hover
+{
+    border-bottom-left-radius: 0vw;
+    border-bottom-right-radius: 0vw;
+    opacity: 1;
+}
+
+/* Bloc où se trouve l'image dans la barre de navigation */
+.logo-lien
+{
+    width: 7%;
+    padding-right: 0%;
+    margin-right: 1%;
+}
+
+/* Image dans la barre de navigation */
+.logo-image
+{
+    padding-right: 2%;
+    width: 100%;
+}
+
+/* Les onglets */
+.nav-lien:link,
+.nav-lien:visited
+{
+    text-decoration: none;
+    font-size: 1.4vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    display : inline-block;
+    width: 10vw;
+    height: 2vw;
+    text-align: center;
+    transition: all .3s;
+    position: relative;
+}
+
+
+/* Les onglets survolé souris */
+.nav-lien:hover
+{
+    background-color: white;
+    color : #222222;
+    opacity: 1;
+    border-radius: 0.8vw;
+}
+
+/* Bordure à droite */
+#border_R
+{
+    border-right: 0.075vw solid #FC833C;
+}
+
+/* Bordure à gauche */
+#border_L
+{
+    border-left: 0.075vw solid #FC833C;
+}
+
+/* Bordure à droite et gauche */
+#border_RL
+{
+    border-right: 0.075vw solid #FC833C;
+    border-left: 0.075vw solid #FC833C;
+}
+
+/* Barre de navigation */
+.nav-barre
+{
+    display: flex;
+}
+
+/* L'onglet principale du menu déroulant */
+.button
+{
+    font-size: 1.4vw;
+    display: block;
+    padding-top: 0.57vw;
+    padding-bottom: 0.57vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    width: 10vw;
+    position: static;
+    background-color: #222222;
+    border: none;
+    cursor: pointer;
+    font-family: 'Nunito', sans serif; 
+    border-right: 0.075vw solid #FC833C;
+    border-left: 0.075vw solid #FC833C;
+    text-align: center;
+    transition: .3s;  
+}
+
+/* L'onglet principale du menu déroulant + survole souris */
+.button:hover
+{
+    border-top-left-radius: 0.8vw;
+    border-top-right-radius: 0.8vw;
+    border-bottom-left-radius: 0vw;
+    border-bottom-right-radius: 0vw;
+    background-color: white;
+    color : #222222;
+    opacity: 1;
+}
+
+/* L'onglet principale et sous-onglets du menu déroulant  + survole souris */
+.button:hover,
+.content:hover
+{
+    border-bottom-left-radius: 0vw;
+    border-bottom-right-radius: 0vw;
+    background-color: white;
+    color : #222222;
+    opacity: 1;
+}
+
+/* Sous-onglets */
+.dropdown-1 .content
+{
+    display: none;
+    visibility: hidden;
+    opacity: 0;    
+}
+
+/* Sous-onglets + survole souris */
+.dropdown-1:hover  .content
+{
+    visibility: visible;
+    opacity: 1;
+    display: flex;    
+    position: fixed;
+    flex-direction: column;
+    background-color: #2e2e2e;
+    width: 13.9vw;
+    padding-top: 0vw;
+    padding-bottom: 0.3vw;
+    height: 5.2vw;
+    text-align: center;
+    border-bottom-left-radius: 1.5vw;
+    border-bottom-right-radius: 1.5vw;
+    border-bottom: 0.15vw solid #FC833C;
+    border-left: 0.15vw solid #FC833C;
+    border-right: 0.15vw solid #FC833C;
+    margin-left: -0.01vw;
+    margin-top: 0vw;
+}
+
+/* Format sous-onglets */
+.button-nav-bar
+{
+    color: white;
+    text-decoration: none;
+    font-family: 'Nunito', sans serif;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.7vw;
+    padding-bottom: 0.7vw;
+    width: 86%;
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+
+/*  1 sous-onglet + survole souris */
+.button-nav-bar:hover
+{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    font-family: 'Nunito', sans serif;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.7vw;
+    padding-bottom: 0.7vw;
+    width: 86%;
+    background-color: #474747;
+    opacity: 1;
+}
+
+/* bordure du second sous-onglet */
+#button-nav-bar-arr
+{
+    border-top: 1vw #222222;
+    border-bottom-left-radius: 1.5vw;
+    border-bottom-right-radius: 1.5vw;
+}
+
+
+/* -------------------------------------Barre de navigation bas--------------------------------------- */
+.navigation_bottom
+{
+    box-shadow: 0px -0.8vw 1.5vw rgba(0,0,0,.3);
+    position: static; 
+    padding: 1vw; 
+    padding-bottom: 1.2vw;
+    bottom: 100vw;
+    width: 100vw; 
+    height: 4vw;
+    background: #080808;
+    text-decoration: none;
+    opacity: 1;
+    z-index: 1000;
+}
+
+/* Format d'écriture de la barre du bas */
+.barrnav_bottom a:-webkit-any-link
+{
+    text-decoration: none;
+    cursor: pointer;
+    width: 0%;
+    position: relative;
+}
+
+/* Images dans la barre du bas */
+.icon_bottom
+{
+    margin-top: 1%;
+    opacity: 0.3;
+    width: 3%;
+    height: 3%;
+    text-decoration: none;
+    -webkit-filter: grayscale(100%);
+}
+
+/* Images dans la barre du bas + survole souris*/
+:hover.icon_bottom
+{
+    opacity: 1;
+    text-decoration: none;
+    -webkit-filter: grayscale(0%);
+} 
+
+/* Nom des créateurs sur la barre du bas */
+.createur_nom
+{
+    opacity: 0.5;
+    font-size: 0.8vw;
+    position: relative;
+    bottom : 3vw;
+    left: 85vw;
+    cursor: default;
+}
+
+
+
+/* ------------------------------Page Accueil---------------------------------- */
+
+/* Contenu de l'accueil */
+.Accueil_content
+{
+    width: 100%;
+    margin-top: 10vw
+}
+
+/* Vidéo au début */
+.video_rat_accueil 
+{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: auto;
+    z-index: 51;
+    transition: all 10000000000s;
+}
+
+/* Vidéo au début + survole souris de tout */
+:hover .video_rat_accueil
+{
+    position: absolute;
+    right: 100%;
+    opacity: 0.2;
+    z-index: 50;
+    position: absolute;
+    transition: all 3s;
+}
+
+/* Taille de la vidéo */
+.video_accueil
+{
+    width: 100%;
+}
+
+/* Titre Accueil */
+
+.titre
+{
+    position: absolute;
+    left: 32.5%;
+    font-size: 3vw;
+    font-weight: bold;
+    color: whitesmoke;
+    text-transform: uppercase;
+    opacity: 0.8;
+    -webkit-text-stroke: 0.2vw #fff;
+}
+
+/* Onglet dans l'accueil */
+.content_accueil
+{
+    display: flex;
+    margin-top: 13vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 5vw;
+    height: 60%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    background-color: transparent;
+}
+
+.nav_accueil
+{
+    font-size: 2vw;
+    background-color: #222222;
+    width: 40%;
+    height: 10%;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    padding: 3vw;
+    border-radius: 1.8vw;
+    border: 0.25vw solid transparent;
+    transition: all .3s;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Onglet dans l'accueil + survole souris */
+.nav_accueil:hover
+{
+    background-color: transparent;
+    border: 1vw solid #222222;
+    transition: all .3s;
+    font-weight: bold;
+    box-shadow: 0vw 0.3vw 0.7vw rgba(0, 0, 0, 0.767);
+}
+
+/* Ligne d'onglet accueil */
+.accueil_content_1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Vidéo background accueil */
+.video_back_3
+{
+    top: -20%;
+    left: 0%;
+    position: absolute;
+    opacity: 0.1;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+/* taille de la vidéo background */
+.video_3
+{
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+}
+
+/* Nom des créateur en haut à droite */
+.createur_nom_2
+{
+    opacity: 0.5;
+    font-size: 0.8vw;
+    position: fixed;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    left: 85%;
+}
+
+/* Nom des créateur en haut à droite + survole souris */
+.createur_nom_2:hover
+{
+    opacity: 1
+}
+
+
+/* --------------------------Page Générique--------------------------- */
+
+/* Bloc de la vidéo du générique */
+.Ratz_Générique
+{
+    display: inline-flex;
+    align-items: center;
+    position: inherit;
+    width: 60%;
+    padding: 5%;
+    background-color: #313131;
+    border-radius: 20pt;
+    border-bottom-right-radius: 20pt;
+    border: 2pt solid #FC833C;
+    border-left: 2pt solid #FC833C;
+    border-right: 2pt solid #FC833C;
+    text-align: center;
+}
+
+/* Vidéo du générique */
+.Générique_Content
+{
+    align-items: center;
+    display: inline-flex;
+    width: 80%;
+}
+
+
+.back_video
+{
+    display: inline-flex;
+    position: relative;
+    text-align: center;
+    width: 70vw;
+    left: 30vw;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    margin-bottom: 3vw;
+    margin-top: 7vw;
+}
+
+
+video::-webkit-media-controls-timeline {display:none;}
+
+.Image
+{
+    width: 250px;
+    position: static;
+    display: none;
+}
+
+
+
+
+/* ---------------------Page Épisodes------------------------ */
+
+/* La liste des épisodes */
+.Liste_des_episodes
+{
+    background-color: transparent;
+    margin-top: 8vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 2vw;
+    padding: 1vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 49;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Bordure du première épisode */
+#first
+{
+    border-top-right-radius: 2vw;
+}
+
+/* Bordure du dernière épisode */
+#last
+{
+    border-bottom-right-radius: 2vw;
+}
+
+/* Chaque Épisode */
+.E1,
+.E2
+{
+    background-color: #313131;
+    transition: all 1s;
+    padding-top: 1.2%;
+    padding-bottom: 1.2%;
+    width: 35%;
+    border-left: 0.2vw solid #FC833C;
+    display: inline-flex;
+    z-index: 0;
+    margin-left: 3%;
+    cursor: default;
+}
+
+/* Épisode du bas */
+.E2:hover
+{
+    transform: scale(1.05,1.05);
+    background-color: #474747;
+    transition: all .7s;
+    width: 90%;
+    border-left: 0.3vw solid #FC833C;
+    border-bottom: 0.3vw solid #FC833C;
+    border-bottom-right-radius: 2vw;
+    z-index: 1;
+}
+
+/* Épisode du haut */
+.E1:hover
+{
+    transform: scale(1.05,1.05);
+    background-color: #474747;
+    transition: all 1s;
+    width: 90%;
+    border-left: 0.3vw solid #FC833C;
+    border-top: 0.3vw solid #FC833C;
+    border-top-right-radius: 2vw;
+    z-index: 1;
+}
+
+/* Nom de l'épisode */
+.nom_ep
+{
+    margin-left: 5%;
+    font-size: 1.3vw;
+}
+
+/* Nom de l'épisode + survole souris de l'épisode du haut */
+.E1:hover .nom_ep
+{
+    font-weight: bold;
+}
+
+/* Bloc du synopsis des épisodes */
+.S1,
+.S2
+{
+    display: none;
+}
+
+/* Synopsis des épisodes */
+.text_ep
+{
+    margin: 5%;
+    height: auto;
+    font-size: 1.1vw;
+    position: static;
+}
+
+/* Bloc des synopsis + survole souris de Episode du bas */
+.E2:hover .S2
+{
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
+    width: 60%;
+    border-radius: 2vw;
+    z-index: 50;
+    background-color: #474747;
+    border-right: 0.25vw solid #FC833C;
+    transition: all 1s;
+}
+
+/* Bloc des synopsis + survole souris de Episode du haut */
+.E1:hover .S1
+{
+    display: block;
+    position: fixed;
+    top: -2%;
+    left: 40%;
+    width: 60%;
+    border-radius: 2vw;
+    z-index: 50;
+    background-color: #474747;
+    border-right: 0.25vw solid #FC833C;
+    transition: all 1s;
+}
+
+/* image Episode */
+
+.back_episode
+{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    z-index: 1;
+    width: 30%;
+}
+
+.image_episode
+{
+    position: sticky;
+    position: -webkit-sticky;
+    width: 100%;
+}
+
+
+
+/* -----------------Page Doublages---------------------- */
+
+.Doublages_Content
+{ 
+    display: flex;
+    flex-direction: column;  
+    margin-top: 7vw; 
+}
+
+/* 1er Ligne */
+.D1
+{
+    margin-top: 3vw;
+    display: inline-flex;    
+    justify-content: center;
+}
+
+/* 2nd Ligne */
+.D2
+{ 
+    display: inline-flex;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* Chaque bloc de doubleurs */
+#D_hover
+{
+    width: 20vw;
+    background-color: #313131;
+    height: 25vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    border-right: 0.25vw solid #FC833C;
+    border-radius: 1.3vw;
+    transition: all 1s;
+}
+
+
+/* .Sylvia:hover#D_hover,
+.Emmanuel:hover#D_hover, 
+.Ramzy:hover#D_hover,
+.Eric:hover#D_hover,
+.Max:hover#D_hover */
+:hover#D_hover
+{
+    transform: scale(1.1,1.1);
+    box-shadow: 0px 0.3px 1.5px rgba(0, 0, 0, 0.767);
+    border-right: 0.5vw solid #FC833C;
+    display: flex;
+    margin-left: 2vw;
+    padding-right: 14vw;
+    background-color: #474747 ;
+    transition: all 1.3s;
+    background-image: none;   
+}
+
+
+
+/*  Photo Doublages */
+
+/* Photo du doubleur en background de son bloc */
+.Eric
+{
+    background-image: url("Eric-Judor.jpg");
+    background-repeat: no-repeat;
+    opacity: .8;
+    background-size: cover;
+}
+
+.Ramzy
+{
+    background-image: url("Ramzy_Bedia.jpg");
+    background-repeat: no-repeat;
+    opacity: .8;
+    background-size: cover;
+}
+
+.Sylvia
+{
+    background-image: url("Sylvia_Bergé.jpg");
+    background-repeat: no-repeat;
+    opacity: .8;
+    background-size: cover;
+}
+
+.Max
+{
+    background-image: url("Max_André.jpg");
+    background-repeat: no-repeat;
+    opacity: .8;
+    background-size: cover;
+}
+
+.Emmanuel
+{
+    background-image: url("Emmanuel_Garijo.jpg");
+    background-repeat: no-repeat;
+    opacity: .8;
+    background-size: cover;
+}
+
+
+.photo-doublages
+{
+    display: none;
+    transition: all 1s;
+}
+
+/* Photo des personnage + survole souris de #D_hover*/
+:hover#D_hover .photo-doublages
+{
+    display: flex;
+    position: relative;
+    margin-top: 12.5%;
+    padding-bottom: 12.5%;
+    width: 80%;
+    height: 80%;
+    border-bottom-left-radius: 1.5vw;
+    border-top-left-radius: 1.5vw;
+    text-align: left;
+    border-right: 0.3vw solid #FC833C;
+    border-bottom-right-radius: 4vw;
+    transition: all 4s; 
+}
+
+/* Bloc du texte d'information sur le doubleur */
+.Contenu_Doublages
+{
+    opacity: 0;
+}
+
+/* Bloc du texte d'information sur le doubleur + survole de la souris de #D_hover */
+:hover#D_hover .Contenu_Doublages
+{
+    width: 100%;
+    border-left: 0.3vw solid #FC833C;
+    margin-left: -0.5vw;
+    border-top-left-radius: 4vw;
+    margin-bottom: 4vw;
+    padding-top: 1vw;
+    padding-left: 2vw;
+    opacity: 1;
+    transition: all 2s;
+}
+
+/* Nom des doubleurs + survole souris de #D_hover */
+:hover#D_hover .Nom_Doubleurs
+{
+    width: 100%;
+    display: none;
+    transition: all 1.3s;
+}
+
+/* Nom du doubleur */
+.Nom_Doubleurs
+{
+    display: block;
+    color: #222222;
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    font-weight: bold;
+    background-color: whitesmoke;
+    border-top-right-radius: 1.3vw;
+    border-top-left-radius: 1.3vw;
+    text-align: center;
+}
+
+/* Texte d'information sur le doubleurs */
+.Text_Doubleurs
+{
+    display: none;
+}
+
+/* Texte d'information sur le doubleurs + survole souris de #D_hover */
+:hover#D_hover .Text_Doubleurs
+{
+    display: flex;
+    padding-right: 10vw;
+    width: 100%;
+    font-size: 1vw;
+}
+
+/* -----------------------------Page Créateurs------------------------------- */
+
+.Createurs
+{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 32.5vw;  
+    display: inline-flex;
+    padding-bottom: 11vw;
+    background: transparent;
+    justify-content: space-evenly;
+}
+
+.AlexisH,
+.JimmyH
+{
+    z-index: 1;
+    position: relative;
+    cursor: default;
+    height: 15vw;
+    width: 20vw;
+    background-color: #313131;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-radius: 1.5vw;
+    transition: all 2s;
+    border: #FC833C solid 0.5vw;
+}
+
+.AlexisH:hover,
+.JimmyH:hover
+{
+    background-color: #474747;
+    height: 40vw;
+    transition: all 2s;
+}
+
+.createurs_rat
+{
+    top: -150%;
+    left: 10%;
+    position: absolute;
+    width: 80%;
+    transition: all 2s;
+    height: auto;
+    border-radius: 0.5vw;
+}
+
+.AlexisH:hover .createurs_rat,
+.JimmyH:hover .createurs_rat
+{
+    margin-top: 15%;
+    top: 15%;
+    transition: all 2s
+}
+
+.createurs_text
+{
+    margin-top: 8vw;
+    transition: all 3s;
+}
+
+.AlexisH:hover .createurs_text,
+.JimmyH:hover .createurs_text
+{
+    margin-top: 0vw;
+    transition: all 3s;
+}
+
+.video_back_2
+{
+    top: -10%;
+    position: absolute;
+    opacity: 0.2;
+    z-index: -1;
+    width: 80%;
+    height: auto;
+}
+.video_2
+{
+    z-index: 0;
+    width: 100%;
+    height: 50%;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<!-- Code HTML -->
+<html>
+
+    <!-- Début du HEAD -->
+    <head>
+
+        <!-- Ajout de la largeur Maximum du site -->
+        <meta name="viewport" content="width=100%, initial-scale=1.0"> 
+
+        <!-- Titre de la page -->
+        <title class="titre">Doublages</title>  
+
+        <!-- Lien vers le fichier CSS -->
+        <link rel="stylesheet" href="style.css">  
+
+        <!-- Lien pour la police d'écriture -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">  
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">  
+
+        <!-- Lien pour l'icone de la page -->
+        <link rel="shortcut icon" type="image/png" href="Ratz_Logo.png" />
+
+        <!-- Format d'écriture complet -->
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        
+    </head>
+    <!-- Fin du HEAD -->
+
+    <!-- Debut du BODY -->
+    <body class="scroll">  <!-- scroll = Avoir accés à la barre de scroll ( lier dans le CSS )-->
+
+        <!-- Balise NAV pour les liens vers d'autres pages -->
+        <nav class="navigation">
+           
+            <!-- Icon à gauche de la barre de navigation -->
+            <a href="index.html" class="logo-lien">                
+                <img src="Ratz_Logo.png" type="image/png" class="logo-image">            
+            </a> 
+
+            <!-- Onglets dans la barre de navigation -->
+           <div class="nav-barre">
+
+               <!-- Onglet Accueil -->
+               <a href="index.html" class="nav-lien" id="border_R">Accueil</a>
+
+               <!-- Menu déroulant -->
+                <div class="dropdown-1">
+
+                    <!-- Onglet Principale -->
+                    <p class="button" id="border_RL">Série</p>
+                    <!-- Sous-Onglets -->
+                    <div class="content">
+                    <a href="Génériques.html" class="button-nav-bar">Générique</a>
+                    <a href="Épisodes.html" class="button-nav-bar" id="button-nav-bar-arr">Épisodes</a>
+                    </div>                 
+                </div>
+                <!-- Fin du Menu déroulant -->
+
+                <!-- Onglet Doublages & Créateurs -->
+               <a href="Doublages.html" class="nav-lien" id="select" id="border_RL">Doublages</a> <!-- id="button_select" permet de savoir quel onglet doit etre en blanc sur le site -->
+               <a href="Créateurs.html" class="nav-lien" id="border_L">Créateurs</a>
+           </div>
+        </nav>
+
+        <!-- Contenu de la page Doublage -->
+        <div class="Doublages_Content">
+
+            <!-- Première ligne de doubleurs -->
+           <div class="D1"> 
+
+                <!-- Doubleur Éric Judor -->
+                <div class="Eric" id="D_hover"> 
+
+                    <p class="Nom_Doubleurs">Eric Judor</p> <!-- Nom du Doubleur -->
+
+                    <img src="Razmo_Doublages.jpg" type="image/jpg" class="photo-doublages"> <!-- Photo du personnage doublé -->
+
+                    <!-- Texte par rapport au doubleur et au personnage -->
+                    <div class="Contenu_Doublages">
+                        <p class="Text_Doubleurs">Razmo, doublé par Eric Judor est un petit rat rondouillard en combinaison bleue de mécanicien, expert en mécanique, qui a inventé les rat-boards</p>
+                        <br/>
+                        <p class="Text_Doubleurs">Éric Judor, parfois simplement appelé Éric, est un acteur, réalisateur, scénariste et humoriste français, né le 25 juillet 1968 à Meaux. Il accède à la notoriété en formant, avec Ramzy Bedia, le duo comique Éric et Ramzy.</p>
+                    </div>
+                </div>
+
+                <!-- Doubleur Ramzy Bédia -->
+                <div class="Ramzy" id="D_hover">
+
+                    <p class="Nom_Doubleurs">Ramzy Bedia</p>  <!-- Nom du doubleur -->
+
+                    <img src="Rapido_Doublages.png" type="image/jpg" class="photo-doublages">  <!-- Photo du personnage doublé -->
+
+                    <!-- Texte par rapport au doubleur et au personnage -->
+                    <div class="Contenu_Doublages">
+                        <p class="Text_Doubleurs">Rapido est un grand rat habillé d'un pantalon noir, d'un tee-shirt blanc et d'une veste rouge. Lui est prétentieux, frondeur, mais peureux.</p>
+                        <br/>
+                        <p class="Text_Doubleurs">Ramzy Bedia, parfois simplement appelé Ramzy, est un acteur et humoriste français, né le 10 mars 1972 à Paris. Il accède à la notoriété en formant, avec Éric Judor, le duo comique Éric et Ramzy.</p>
+                    </div>
+                </div>
+           </div>
+
+           <!-- Seconde ligne de doubleurs  -->
+           <div class="D2">
+
+                <!-- Doubleur Sylvia Bergé -->
+                <div class="Sylvia" id="D_hover">
+
+                    <p class="Nom_Doubleurs">Sylvia Bergé</p>  <!-- Nom du doubleur -->
+
+                    <img src="Svetlana_Doublages.jpg" type="image/jpg" class="photo-doublages">  <!-- Photo du personnage doublé -->
+
+                    <!-- Texte par rapport au doubleur et au personnage -->
+                    <div class="Contenu_Doublages">
+                        <p class="Text_Doubleurs">Svetlana est une ancienne miss monde, elle travaille depuis des années au service du capitaine en tant que mécanicienne. Elle est dotée d'une force herculéenne qui lui permet de porter quasiment tous les objets.</p>
+                        <br/>
+                        <p class="Text_Doubleurs">Sylvia Bergé, née le 21 décembre 1962, est une comédienne française, sociétaire de la Comédie Française également active dans la chanson et le doublage.</p>
+                    </div>
+                </div>
+
+                <!-- Doubleur Max André -->
+                <div class="Max" id="D_hover">
+
+                    <p class="Nom_Doubleurs">Max André</p>  <!-- Nom du doubleur -->
+
+                    <img src="Capitaine_Doublages.jpg" type="image/jpg" class="photo-doublages">  <!-- Photo du personnage doublé -->
+
+                    <!-- Texte par rapport au doubleur et au personnage -->
+                    <div class="Contenu_Doublages">
+                        <p class="Text_Doubleurs">Amateur de golf, ce vieux capitaine écossais à la barbe blanche est le seul à connaître les destinations de son bateau, d'après Benny, dans L'année du rat, il serait né en 1937.</p>
+                        <br/>
+                        <p class="Text_Doubleurs">Max André, est un acteur et directeur artistique français, né le 1er août 1938 à Paris et mort le 10 novembre 2020 en France. Actif dans le doublage, il a notamment été la voix française la plus régulière de Ron Rifkin. Il était ami avec l'acteur Daniel Beretta.</p>
+                    </div>
+                </div>
+
+                <!-- Doubleur Emmanuel Garijo -->
+                <div class="Emmanuel" id="D_hover">
+
+                    <p class="Nom_Doubleurs">Emmanuel Garijo</p>  <!-- Nom du doubleur -->
+
+                    <img src="Benny_Doublages.jpg" type="image/jpg" class="photo-doublages">  <!-- Photo du personnage doublé -->
+
+                    <!-- Texte par rapport au doubleur et au personnage -->
+                    <div class="Contenu_Doublages">
+                        <p class="Text_Doubleurs">Benny est le cuisinier du bateau et il est asiatique. Bien qu'il ait étudié la cuisine, il ne prépare que des plats à base de fromage, des sushis et des soufflés, ou encore des plats plus douteux.Il est allergique aux produits laitiers. Il a aussi des talents de ninja. Il frise la stupidité et complote souvent avec Svetlana.</p>
+                        <br/>
+                        <p class="Text_Doubleurs">Emmanuel Garijo est un acteur français. Très actif dans le doublage.</p>
+                    </div>
+                </div>
+           </div>  
+
+        </div>
+
+        <!-- Barre de navigation du bas -->
+        <div class="navigation_bottom">
+
+            <!-- Différent bouton vers des liens externes au site -->
+            <div class="barrnav_bottom">
+                <a  class="lien_icon" target="_Blank" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjh-Oz28Nv0AhUF6RoKHU65B_YQFnoECAIQAQ&url=https%3A%2F%2Fwww.netflix.com%2Ffr%2Ftitle%2F80001803&usg=AOvVaw2MRi9x0dwMImCfpKtZY17C">
+                    <img class="icon_bottom" src="Icon_Netflix.png" type="image/png">
+                </a>
+                <a class="lien_icon" target="_Blank" href="https://www.instagram.com/memes_ratz_officiel/?hl=fr">
+                    <img src="Icon_Instagram.png" type="image/png" class="icon_bottom">
+                </a>
+                <a class="lien_icon" href="https://twitter.com/ratzofficiel" target="_Blank">
+                    <img src="Icon_Twitter.png" type="image/png" class="icon_bottom">
+                </a>
+            </div>
+
+            <!-- Nom des créateurs du site -->
+            <div class="createur_nom">
+                <p>Jimmy Toutain & Alexis Escobar</p>
+                <p>Lycée Albert Londres</p>
+            </div>
+        </div>
+
+    </body>
+    <!-- Fin du BODY -->
+
+</html>
+<!-- Fin du code HTML -->

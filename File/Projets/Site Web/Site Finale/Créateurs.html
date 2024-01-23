@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<!-- Code HTML -->
+<html>
+
+    <!-- Début du HEAD -->
+    <head>
+
+        <!-- Ajout de la largeur Maximum du site -->
+        <meta name="viewport" content="width=100%, initial-scale=1.0"> 
+
+        <!-- Titre de la page -->
+        <title class="titre">Créateurs</title>  
+
+        <!-- Lien vers le fichier CSS -->
+        <link rel="stylesheet" href="style.css">  
+
+        <!-- Lien pour la police d'écriture -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">  
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">  
+
+        <!-- Lien pour l'icone de la page -->
+        <link rel="shortcut icon" type="image/png" href="Ratz_Logo.png" />
+
+        <!-- Format d'écriture complet -->
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        
+    </head>
+    <!-- Fin du HEAD -->
+    
+    <!-- Debut du BODY -->
+    <body class="N_scroll">  <!-- N_scroll = Ne pas avoir accés à la barre de scroll ( lier dans le CSS )-->
+
+        <!-- Balise NAV pour les liens vers d'autres pages -->
+        <nav class="navigation">
+           
+            <!-- Icon à gauche de la barre de navigation -->
+            <a href="index.html" class="logo-lien">                
+                <img src="Ratz_Logo.png" type="image/png" class="logo-image">            
+            </a> 
+
+            <!-- Onglets dans la barre de navigation -->
+           <div class="nav-barre">
+
+               <!-- Onglet Accueil -->
+               <a href="index.html" class="nav-lien" id="border_R">Accueil</a>
+
+               <!-- Menu déroulant -->
+                <div class="dropdown-1">
+
+                    <!-- Onglet Principale -->
+                    <p class="button" id="border_RL">Série</p>
+                    <!-- Sous-Onglets -->
+                    <div class="content">
+                    <a href="Génériques.html" class="button-nav-bar">Générique</a>
+                    <a href="Épisodes.html" class="button-nav-bar" id="button-nav-bar-arr">Épisodes</a>
+                    </div>                 
+                </div>
+                <!-- Fin du Menu déroulant -->
+
+                <!-- Onglet Doublages & Créateurs -->
+               <a href="Doublages.html" class="nav-lien" id="border_RL">Doublages</a> 
+               <a href="Créateurs.html" class="nav-lien" id="select" id="border_L">Créateurs</a> <!-- id="button_select" permet de savoir quel onglet doit etre en blanc sur le site -->
+           </div>
+        </nav>
+
+        <!-- Contenu de la page Créateurs -->
+        <div class="Createurs">
+
+            <!-- Créateur Alexis Escobar -->
+            <div class="AlexisH">
+
+                <img src="Alexis_Rat.JPG" type="image/JPG" class="createurs_rat">  <!-- Photo du créateur en rat -->
+
+                <!-- Information sur le créateur -->
+                <div class="createurs_text">
+                    <p>ALEXIS ESCOBAR</p>    
+                    <p>18 ANS</p>
+                    <p>12 OCTOBRE 2003</p>
+                </div>
+            </div>
+
+            <!-- Créateur Jimmy Toutain -->
+            <div class="JimmyH">
+
+                <img src="Jimmy_Rat.JPG" type="image/JPG" class="createurs_rat">  <!-- Photo du créateur en rat -->
+
+                <!-- Information sur le créateur -->
+                <div class="createurs_text">
+                    <p>JIMMY TOUTAIN</p>
+                    <p>18 ANS</p>
+                    <p>25 SEPTEMBRE 2003</p>
+                </div>
+            </div>
+
+            <!-- Vidéo en background -->
+            <div class="video_back_2">
+                <video 
+                    autoplay
+                    loop=1
+                    muted
+                    class="video_2"
+                    oncontextmenu="return false;">
+                    <source src="Ratz_Generique.mp4">
+                </video>
+            </div>
+
+        </div>
+
+        <!-- Barre de navigation du bas -->
+        <div class="navigation_bottom">
+            <div class="barrnav_bottom">
+
+                <!-- Différent bouton vers des liens externes au site -->
+                <a  class="lien_icon" target="_Blank" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjh-Oz28Nv0AhUF6RoKHU65B_YQFnoECAIQAQ&url=https%3A%2F%2Fwww.netflix.com%2Ffr%2Ftitle%2F80001803&usg=AOvVaw2MRi9x0dwMImCfpKtZY17C">
+                    <img class="icon_bottom" src="Icon_Netflix.png" type="image/png">
+                </a>
+                <a class="lien_icon" target="_Blank" href="https://www.instagram.com/memes_ratz_officiel/?hl=fr">
+                    <img src="Icon_Instagram.png" type="image/png" class="icon_bottom">
+                </a>
+                <a class="lien_icon" href="https://twitter.com/ratzofficiel" target="_Blank">
+                    <img src="Icon_Twitter.png" type="image/png" class="icon_bottom">
+                </a>
+
+                <!-- Nom des créateurs du site -->
+                <div class="createur_nom">
+                    <p>Jimmy Toutain & Alexis Escobar</p>
+                    <p>Lycée Albert Londres</p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <!-- Fin du BODY -->
+
+</html>
+<!-- Fin du code HTML -->
